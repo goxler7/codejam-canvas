@@ -38,9 +38,10 @@ btnRS.addEventListener('click', function() {
 });
 
 btn4x4.addEventListener('click', function(){
-  draw(img4x4)
+  draw(img4x4);
+
 });
 
 btn32x32.addEventListener('click', function(){
-  draw(img32x32)
+  draw(img32x32);
 });

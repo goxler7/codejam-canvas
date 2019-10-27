@@ -14,6 +14,7 @@
   box-shadow: 0 0 5px rgba($darkColor, 0.25);
   width: 512px;
   height: 512px;
+  image-rendering: pixelated;
 }
 
 .tools_container {
@@ -70,7 +71,7 @@
     }
   }
 
-  &_cur_color {
+  &_cur_color, &_prev_color, &_prim_color, &_sec_color {
     &::before {
       border-radius: 50%;
       border: 1px solid $optionColor;
@@ -80,29 +81,24 @@
 
   &_prev_color {
     &::before {
-      border-radius: 50%;
-      border: 1px solid $optionColor;
       background: green;
     }
   }
 
   &_prim_color {
     &::before {
-      border-radius: 50%;
-      border: 1px solid $optionColor;
       background: red;
     }
   }
 
   &_sec_color {
     &::before {
-      border-radius: 50%;
-      border: 1px solid $optionColor;
       background: blue;
     }
   }
 
-  &:hover {
+  &:hover, &-active {
+    color: $lightColor;
     background: $optionColor;
   }
 }
