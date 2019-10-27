@@ -1,0 +1,32 @@
+.icon_btn {
+  background: none;
+  color: $optionColor;
+  font-size: 2rem;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: $darkColor;
+  }
+}
+
+.social_bar {
+  display: flex;
+  &--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $optionColor;
+    color: $lightColor;
+
+    &:hover {
+      background: $darkColor;
+    }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
